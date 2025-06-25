@@ -345,9 +345,9 @@ html, body {
     color: var(--gray1-color);
     opacity: 0.9;
     font-size: 14px;
-    font-weight: bold;
-    line-height: 30px;
-    letter-spacing: -1px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: -0.5px;
     cursor: pointer;
     gap: 14px;
 }
@@ -530,38 +530,46 @@ margin-top: 15px;
 
 .product-cards {
     display: flex;
-    flex-direction: row;
+    gap: 10px;
     width: 791px;
-    height: 281px;
 }
 
 .product-card {
     width: 198px;
-    height: 281px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--light-gray2-color);
+    min-height: 281px; /* Минимальная высота */
 }
 
 .product-card img {
     width: 115px;
     margin: 15px auto;
     object-fit: contain;
+    flex-shrink: 0; /* Запрещаем сжатие изображения */
+}
+
+.card-footer {
+    margin-top: auto; /* Прижимаем к низу */
+    padding: 0 10px 20px; /* Отступ снизу 20px */
+    text-align: center;
 }
 
 .product-card h3 {
     font-size: 12px;
     font-weight: 200;
-    color: var(--black-text);
-    text-align: center;
-    letter-spacing: -0.5px;
-    margin-top: 10px;
+    margin: 5px 0;
 }
 
-.product-card span {
-    font-weight: bold;
+.price {
+    font-weight: 500;
     font-size: 14px;
-
+    display: block;
+    margin-bottom: 10px;
 }
 
-
+.button-buy {
+    width: 176px;
+    height: 30px;
+    margin: 0 auto;
+}
