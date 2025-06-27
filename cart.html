@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <title>Compday</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/cart.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?v=2">
 </head>
-<header class="site-header">
+
+<body>
+    <header class="site-header">
         <div class="header-inner">
             <div class="catalogue-button">
                 <div class="menu-icon">
@@ -153,9 +155,138 @@
                 <input type="text" placeholder="Поиск по сайту" class="search-input">
                 <button class="search-button">НАЙТИ</button>
             </div>
+            <h2>Товары в корзине</h2>
+            <div class="cart-block">
+                <table>
+                    <tr>
+                        <th><strong>ID</strong></th>
+                        <th><strong></strong></th>
+                        <th><strong>Наименование</strong></th>
+                        <th><strong>Цена</strong></th>
+                        <th><strong>Кол-во</strong></th>
+                        <th><strong>Сумма</strong></th>
+                        <th><strong></strong></th>
+                    </tr>
 
+                    <tr>
+                        <td>454680</td>
+                        <td><img src="img/item-card/6120293.png" alt="img1" style="max-width: 60px;"></td>
+                        <td style="text-decoration: underline; color: var(--blue);">NVIDIA GeForce RTX 4060 Ti MSI OC
+                            8Gb (RTX 4060 Ti 8G VENTUS 2X BLACK E1 OC)</td>
+                        <td>44 940 ₽</td>
+                        <td>1</td>
+                        <td>44 940 ₽</td>
+                        <td>✖</td>
+                    </tr>
 
-        </div>    
+                    <tr>
+                        <td>322986</td>
+                        <td><img src="img/item-card/883854.jpeg" alt="img2" style="max-width: 60px;"></td>
+                        <td style="text-decoration: underline; color: var(--blue);">Блок питания 750W DeepCool PK750D
+                        </td>
+                        <td>5 070 ₽</td>
+                        <td>1</td>
+                        <td>5 070 ₽</td>
+                        <td>✖</td>
+                    </tr>
+                </table>
+                <div class="cart-block-aftertable">
+                    <div class="cart-block-aftertable-left">
+                        <a>Ссылка на корзину
+                            <br>
+                            <span
+                                style="text-decoration: underline; color: var(--blue);">https://compday.ru/my/cart/hi21/</span>
+                        </a>
+                    </div>
+                    <div class="cart-block-aftertable-right">
+                        <a style="word-spacing: 10px">Самовывоз бесплатно</a>
+                        <a style="font-weight: 600;">Итого: 50 010₽</a>
+                    </div>
+                </div>
+            </div>
+            <h2>Оформление заказа</h2>
+            <div class="order-block">
+                <form class="order-form">
+                    <!-- Покупатель -->
+                    <div class="order-row">
+                        <span class="order-label">Покупатель:</span>
+                        <label><input type="radio" name="type" checked> Частное лицо</label>
+                        <label><input type="radio" name="type"> Организация</label>
+                    </div>
+                    <!-- Способы оплаты -->
+                    <div class="order-row">
+                        <span class="order-label">Способ оплаты:</span>
+                        <label><input type="radio" name="pay" checked> Наличный</label>
+                        <label><input type="radio" name="pay"> Онлайн оплата</label>
+                        <label><input type="radio" name="pay"> В кредит</label>
+                    </div>
+                    <!-- Доставка -->
+                    <div class="order-row">
+                        <span class="order-label">Способы получения товара:</span>
+                        <label><input type="radio" name="delivery" checked> Самовывоз</label>
+                        <label><input type="radio" name="delivery"> Доставка</label>
+                    </div>
+                    <!-- Адрес -->
+                    <div class="order-row">
+                        <span class="order-label">Адрес самовывоза:</span>
+                        <span class="order-pickup">г. Москва Сущевский Вал д.5, стр.20, 2 этаж, павильон П-2</span>
+                    </div>
+                    <!-- Контактная информация -->
+                    <div class="order-contacts">
+                        <span class="order-label section">Контактная информация</span>
+                        <div class="order-contact-table">
+                            <div class="order-contact-row">
+                                <div class="order-contact-label required">Имя <span class="star">*</span></div>
+                                <div class="order-contact-input">
+                                    <input type="text" required>
+                                </div>
+                            </div>
+                            <div class="order-contact-row">
+                                <div class="order-contact-label">E-mail для счёта</div>
+                                <div class="order-contact-input">
+                                    <input type="email">
+                                </div>
+                            </div>
+                            <div class="order-contact-row">
+                                <div class="order-contact-label required">Мобильный <span class="star">*</span></div>
+                                <div class="order-contact-input">
+                                    <div class="order-phone-group">
+                                        <span>+7 (</span>
+                                        <input type="text" class="phone-code" maxlength="3" placeholder="код">
+                                        <span>)</span>
+                                        <span>-</span>
+                                        <input type="text" class="phone-num" maxlength="10"
+                                            placeholder="номер телефона">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-contact-row">
+                                <div class="order-contact-label">Дополнительный</div>
+                                <div class="order-contact-input">
+                                    <div class="order-phone-group">
+                                        <span>+7 (</span>
+                                        <input type="text" class="phone-code" maxlength="3" placeholder="код">
+                                        <span>)</span>
+                                        <span>-</span>
+                                        <input type="text" class="phone-num" maxlength="10"
+                                            placeholder="номер телефона">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-addinfo-row">
+                        <span class="order-label section">Дополнительная информация</span>
+                        <textarea class="order-textarea"></textarea>
+                    </div>
+                    <div class="order-required-text">
+                        Поля, отмеченные звездочкой (*) обязательны для заполнения.
+                    </div>
+                    <button class="order-btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+                </form>
+
+            </div>
+        </div>
     </main>
     <footer class="site-footer">
         <div class="footer-text">
@@ -167,8 +298,6 @@
             <img src="img/google.png" alt="google">
         </div>
     </footer>
-<body>
-
 </body>
 
 </html>
