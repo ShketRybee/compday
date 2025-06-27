@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Compday</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -14,25 +15,35 @@
 <body>
     <header class="site-header">
         <div class="header-inner">
+            <div class="catalogue-button">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.ny.png" alt="CompDay" />
                 </a>
             </div>
-            <nav class="main-nav">
-                <div class="contact-block">
+            <div class="contact-block">
+                <div class="contact-left">
                     <a href="tel:+74953747385" class="phone-button">8 495 374 73 85</a>
                     <div class="contact-right">
                         <a href="#callme">Обратный звонок</a>
                         <a href="mailto:mail@compday.ru"
                             style="color: white; text-decoration: underline;">mail@compday.ru</a>
                     </div>
-                    <div class="auth-block">
-                        <a href="#login" class="login-button">Вход</a>
-                        <a href="#register" class="register-link">Регистрация</a>
-                    </div>
                 </div>
-            </nav>
+                <div class="auth-block">
+                    <a href="#login" class="login-button">Вход</a>
+                    <a href="#register" class="register-link">Регистрация</a>
+                </div>
+            </div>
+            <a href="tel:+74953747385" class="mobile-phone-link">
+                <img src="img/phone.png" alt="Телефон" />
+            </a>
             <div class="main-cart">
                 <a href="cart.html">
                     <img src="img/cart.png" alt="Корзина" />
@@ -43,7 +54,6 @@
                 </a>
             </div>
         </div>
-
     </header>
     <nav class="navbar">
         <div class="nav-container">
@@ -72,10 +82,12 @@
         <div class="left-block">
             <div class="catalogue">
                 <div class="catalogue-title">
-                    <div class="menu-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="catalogue-button2">
+                        <div class="menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                     <span>КАТАЛОГ ТОВАРОВ</span>
                 </div>
@@ -263,13 +275,13 @@
                 <input type="text" placeholder="Поиск по сайту" class="search-input">
                 <button class="search-button">НАЙТИ</button>
             </div>
-            <div class="css-slider">
-                <div class="slides">
-                    <img src="img/slide1.jpg" alt="Slide 1">
-                    <img src="img/slide2.jpg" alt="Slide 2">
-                    <img src="img/slide3.png" alt="Slide 3">
-                    <img src="img/slide1.jpg" alt="Slide 1">
-                </div>
+            <div class="banner">
+                <img src="img/slide1.jpg" alt="Slide 1">
+                <!--
+                 <img src="img/slide2.jpg" alt="Slide 2">
+                 <img src="img/slide3.png" alt="Slide 3">   
+                 -->
+
             </div>
             <div class="img-cards">
                 <img src="img/1.jpg" alt="Card 1">
@@ -281,57 +293,130 @@
                 <div class="product-cards">
                     <!-- Карточка 1 -->
                     <div class="product-card">
-                        <img src="img/item-card/6120293.png" alt="RTX 4060 Ti">
+                        <a href="product.html" class="product-link">
+                            <img src="/img/item-card/6120293.png" alt="RTX 4060 Ti">
+                        </a>
                         <div class="card-footer">
                             <h3>NVIDIA GeForce RTX 4060 Ti MSI OC 8Gb</h3>
                             <span class="price">44 940 ₽</span>
-                            <button class="button-buy">КУПИТЬ</button>
+                            <a href="cart.html" class="button-buy">КУПИТЬ</a>
                         </div>
                     </div>
-
                     <!-- Карточка 2 -->
                     <div class="product-card">
-                        <img src="img/item-card/883854.jpeg" alt="Блок питания">
+                        <a href="product.html" class="product-link">
+                            <img src="img/item-card/883854.jpeg" alt="Блок питания">
+                        </a>
                         <div class="card-footer">
                             <h3>Блок питания DEEPCOOL 750W</h3>
                             <span class="price">5 070 ₽</span>
-                            <button class="button-buy">КУПИТЬ</button>
+                            <a href="cart.html" class="button-buy">КУПИТЬ</a>
                         </div>
                     </div>
 
                     <!-- Карточка 3 -->
                     <div class="product-card">
-                        <img src="img/item-card/6015452.png" alt="Монитор MSI">
+                        <a href="product.html" class="product-link">
+                            <img src="img/item-card/6015452.png" alt="Монитор MSI">
+                        </a>
                         <div class="card-footer">
                             <h3>MSI 27" Modern MD272QXPW</h3>
                             <span class="price">24 299 ₽</span>
-                            <button class="button-buy">КУПИТЬ</button>
+                            <a href="cart.html" class="button-buy">КУПИТЬ</a>
                         </div>
                     </div>
 
                     <!-- Карточка 4 -->
                     <div class="product-card">
-                        <img src="img/item-card/372632.jpeg" alt="SSD накопитель">
+                        <a href="product.html" class="product-link">
+                            <img src="img/item-card/372632.jpeg" alt="SSD накопитель">
+                        </a>
                         <div class="card-footer">
                             <h3>Накопитель SSD 128Gb Silicon Power Ace</h3>
                             <span class="price">1 184 ₽</span>
-                            <button class="button-buy">КУПИТЬ</button>
+                            <a href="cart.html" class="button-buy">КУПИТЬ</a>
                         </div>
+                    </div>
+
+                </div>
+                <h2>Новинки</h2>
+                <div class="product-cards">
+                    <!-- Карточка 1 -->
+                    <div class="product-card">
+                        <a href="product.html" class="product-link">
+                            <img src="img/item-card/1005147.png" alt="Ryzen 5 5600GT">
+                        </a>
+                        <div class="card-footer">
+                            <h3>AMD Ryzen 5 5600GT OEM</h3>
+                            <span class="price">12 780 ₽</span>
+                            <a href="cart.html" class="button-buy">КУПИТЬ</a>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="product-card">
+                        <a href="product.html" class="product-link">
+                            <img src="img/item-card/197933.png" alt="Компьютер для дома">
+                        </a>
+                        <div class="card-footer">
+                            <h3>Компьютер для дома CompDay №3872</h3>
+                            <span class="price">39 566 ₽</span>
+                            <a href="cart.html" class="button-buy">КУПИТЬ</a>
+                        </div>
+                    </div>
+
+                </div>
+                <h2>Популярные категории</h2>
+                <div class="product-cards">
+                    <div class="categories-card">
+                        <img src="img/categories/mobile.png" class="categories" alt="">
+                    </div>
+                    <div class="categories-card">
+                        <img src="img/categories/monoblocks.png" class="categories" alt="">
+                    </div>
+                    <div class="categories-card">
+                        <img src="img/categories/tablets.png" class="categories" alt="">
+                    </div>
+                    <div class="categories-card">
+                        <img src="img/categories/notebooks.png" class="categories" alt="">
                     </div>
                 </div>
             </div>
+            <div class="info-block">
+                <h2>Системные блоки и комплектующие</h2>
+                <p>Для геймеров и студентов, для менеджеров и ИТ-специалистов, для дома и офиса — наш магазин предлагает
+                    широчайший ассортимент техники. Каталог включает более 100.000 наименований:</p>
+                <ul>
+                    <li>компьютеры и комплектующие;</li>
+                    <li>серверы и серверное оборудование;</li>
+                    <li>системные блоки, ноутбуки, планшеты и смартфоны;</li>
+                    <li>офисная, бытовая, аудио- и видеотехника;</li>
+                    <li>расходные материалы и многое другое.</li>
+                </ul>
+                <h2 style="color: var(--blue); font-weight: bold;">
+                    Выбираем компьютер правильно
+                </h2>
+                <p>Выбор ПК часто сложен, облегчить процесс поможет конфигуратор. Достаточно определить нужные
+                    компоненты и, узнав стоимость, оформить заказ. Такая онлайн-сборка удобна, ведь она помогает cделать
+                    системный блок индивидуальным. Вы сможете собрать компьютер любого вида:</p>
+                <ul>
+                    <li>офисный;</li>
+                    <li>игровой;</li>
+                    <li>домашний.</li>
+                </ul>
+            </div>
         </div>
-        <div class="main-cards">
-            <h2>Новинки</h2>
-        </div>
-        <div class="main-cards">
-            <h2>Популярные категории</h2>
-        </div>
-        </div>
-    </main>
 
+    </main>
     <footer class="site-footer">
-        <!-- Копирайт, ссылки, контакты -->
+        <div class="footer-text">
+            <p>2004 - 2025 © Сompday.ru — продажа компьютерной техники и комплектующих</p>
+        </div>
+        <div class="footer-icons">
+            <img src="img/vimeo.png" alt="vimeo">
+            <img src="img/youtube.png" alt="youtube">
+            <img src="img/google.png" alt="google">
+        </div>
     </footer>
 
 </body>

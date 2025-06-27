@@ -1,0 +1,4 @@
+.catalogue-list li {
+    font-weight: bold;
+    color: var(--orange-color);
+}

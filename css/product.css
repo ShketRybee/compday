@@ -1,0 +1,17 @@
+.catalogue-product {
+    all: unset;
+}
+.catalogue-product ul {
+    all: unset;
+}
+
+.catalogue-product li {
+    all: unset;
+    display: flex;
+    line-height: 23px;
+}
+
+.catalogue-product a {
+    width: 250px;
+    padding-left: 10px;
+}
