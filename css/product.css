@@ -242,3 +242,14 @@ td {
         margin: 3px;
     }
 }
+
+@media (max-width: 750px) {
+    .left-block {
+        display: none;
+    }
+    .product-photos {
+        max-width: 519px;
+        width: auto;
+    }
+
+}
