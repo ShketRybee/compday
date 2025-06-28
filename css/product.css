@@ -247,6 +247,9 @@ td {
     .left-block {
         display: none;
     }
+    .catalogue-button {
+        display: flex;
+    }
     .product-photos {
         max-width: 519px;
         width: auto;

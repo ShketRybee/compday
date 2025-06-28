@@ -301,6 +301,9 @@ td img {
     .left-block {
         display: none;
     }
+    .catalogue-button {
+        display: flex;
+    }
 }
 
 @media (max-width: 500px) {
